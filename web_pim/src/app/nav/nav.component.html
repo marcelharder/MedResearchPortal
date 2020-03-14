@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" [routerLink]="['/home']">CoActive Coaching</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item"  routerLinkActive="active"> <a class="nav-link" [routerLink]="['/intro']">Coaches</a>    </li>
+      <li class="nav-item" >
+        <div class="nav-link dropdown" dropdown>
+          <a class="dropdown-toggle" dropdownToggle>
+            Courses
+          </a>
+          <div class="dropdown-menu mt-3" *dropdownMenu>
+            <a class="dropdown-item" [routerLink]="['/course_1']"><i class="fa fa-course"></i>Course 1</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="['/course_2']"><i class="fa fa-course"></i>Course 2</a>
+          </div>
+        </div>
+      
+      </li>
+      <li class="nav-item" >
+        <div class="nav-link dropdown" dropdown>
+          <a class="dropdown-toggle" dropdownToggle>
+            Gallery
+          </a>
+          <div class="dropdown-menu mt-3" *dropdownMenu>
+            <a class="dropdown-item" [routerLink]="['/about']"><i class="fa fa-course"></i>About</a>
+          </div>
+        </div>
+      
+      </li>
+     
+      <li class="nav-item" *ngIf="adminLogged"  routerLinkActive="active"> <a class="nav-link " [routerLink]="['/users']">Users</a>   </li>
+      <li class="nav-item" *ngIf="adminLogged"  routerLinkActive="active"> <a class="nav-link " [routerLink]="['/bookings']">Bookings</a>   </li>
+      <li class="nav-item" *ngIf="adminLogged"  routerLinkActive="active"> <a class="nav-link " [routerLink]="['/payments']">Payments</a>   </li>
+     
+    </ul>
+
+    <div *ngIf="loggedIn()" class="dropdown" dropdown>
+      <a class="dropdown-toggle" dropdownToggle>
+        Welcome {{auth.decodedToken.unique_name | titlecase}}
+      </a>
+      <div class="dropdown-menu mt-3" *dropdownMenu>
+        <a class="dropdown-item" href="#" [routerLink]="['/profile']"><i class="fa fa-user"></i>Edit profile</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#" (click)="logOut()"><i class="fa- fa-sign-out"></i>Log out</a>
+      </div>
+    </div>
+
+    <form *ngIf="!loggedIn()" #loginForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()" required>
+      <input class="form-control mr-sm-2" name="username" placeholder ="username" [(ngModel)]="model.username" required>
+      <input class="form-control mr-sm-2" name="password" placeholder="password" type="password" [(ngModel)]="model.password">
+      <button [disabled]="!loginForm.valid" class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+    </form>
+
+    <button  *ngIf="!loggedIn()" class="btn btn-primary my-2 my-sm-0 ml-1" (click)="showRegister()">Register</button>
+
+  </div>
+
+
+</nav>

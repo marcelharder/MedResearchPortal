@@ -1,0 +1,14 @@
+C:\Users\m_har\Documents\tp\tracpersonal_api\bin\MCD\Debug\netcoreapp2.1\tracpersonal_api.deps.json
+C:\Users\m_har\Documents\tp\tracpersonal_api\bin\MCD\Debug\netcoreapp2.1\tracpersonal_api.runtimeconfig.json
+C:\Users\m_har\Documents\tp\tracpersonal_api\bin\MCD\Debug\netcoreapp2.1\tracpersonal_api.runtimeconfig.dev.json
+C:\Users\m_har\Documents\tp\tracpersonal_api\bin\MCD\Debug\netcoreapp2.1\tracpersonal_api.dll
+C:\Users\m_har\Documents\tp\tracpersonal_api\bin\MCD\Debug\netcoreapp2.1\tracpersonal_api.pdb
+C:\Users\m_har\Documents\tp\tracpersonal_api\obj\MCD\Debug\netcoreapp2.1\tracpersonal_api.csprojAssemblyReference.cache
+C:\Users\m_har\Documents\tp\tracpersonal_api\obj\MCD\Debug\netcoreapp2.1\tracpersonal_api.csproj.CoreCompileInputs.cache
+C:\Users\m_har\Documents\tp\tracpersonal_api\obj\MCD\Debug\netcoreapp2.1\tracpersonal_api.RazorAssemblyInfo.cache
+C:\Users\m_har\Documents\tp\tracpersonal_api\obj\MCD\Debug\netcoreapp2.1\tracpersonal_api.RazorAssemblyInfo.cs
+C:\Users\m_har\Documents\tp\tracpersonal_api\obj\MCD\Debug\netcoreapp2.1\tracpersonal_api.AssemblyInfoInputs.cache
+C:\Users\m_har\Documents\tp\tracpersonal_api\obj\MCD\Debug\netcoreapp2.1\tracpersonal_api.AssemblyInfo.cs
+C:\Users\m_har\Documents\tp\tracpersonal_api\obj\MCD\Debug\netcoreapp2.1\tracpersonal_api.RazorTargetAssemblyInfo.cache
+C:\Users\m_har\Documents\tp\tracpersonal_api\obj\MCD\Debug\netcoreapp2.1\tracpersonal_api.dll
+C:\Users\m_har\Documents\tp\tracpersonal_api\obj\MCD\Debug\netcoreapp2.1\tracpersonal_api.pdb

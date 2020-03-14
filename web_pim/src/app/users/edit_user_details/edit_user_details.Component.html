@@ -1,0 +1,107 @@
+<div class="container">
+  <div class="row">
+    <h1>{{ user.username | titlecase }}'s Profile</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <img
+          class="card-img-top img-thumbnail"
+          src="{{ user.photoUrl }}"
+          alt="{{ user.knownAs }}"
+        />
+        <div class="card-body">
+          <div>
+            <strong>Locations: </strong>
+            <p>{{ user.city }}, {{ user.country }}</p>
+          </div>
+          <div>
+            <strong>Last active: </strong>
+            <p>{{ user.lastActive | date }}</p>
+          </div>
+          <div>
+            <strong>Signed on since: </strong>
+            <p>{{ user.created | date }}</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-success w-100">Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="tab-panel">
+        <tabset class="member-tabset">
+          <tab heading="About {{ user.username | titlecase }}">
+            <div class="row">
+              <div class="col-sm-2"><h4>Email:</h4></div>
+              <div class="col-sm-10">{{ user.email }}</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-2"><h4>Mobile:</h4></div>
+              <div class="col-sm-10">{{ user.phone }}</div>
+            </div>
+          </tab>
+          <tab heading="Payments">
+            
+              <h4>List of invoices</h4>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                   
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Invoice date</th>
+                    <th>Paid</th>
+                  </tr>
+                </thead>
+  
+                <tbody>
+                  <tr *ngFor="let item of invoices">
+                   
+                    <td>{{ item.description }}</td>
+                    <td>{{ item.invoiceDate | date }}</td>
+                    <td>{{ item.amount }}</td>
+                    <td>{{ item.paid }}</td>
+                  </tr>
+                </tbody>
+              </table>
+          
+          
+          </tab>
+          <tab heading="Courses">
+            <h4>List of courses attended</h4>
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                 
+                  <th>Description</th>
+                  <th>Begins</th>
+                  <th>Ends</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr *ngFor="let item of enrolled_courses">
+                 
+                  <td>{{ item.description }}</td>
+                  <td>{{ item.courseDate | date }}</td>
+                  <td>{{ item.endDate | date }}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="d-flex justify-content-left" *ngIf="areThereMoreCourses()">
+
+              <select [(ngModel)]="selected_course">
+              <option *ngFor="let course of selectable_courses" [ngValue]="course">{{course.description}}</option>
+              </select>
+
+              <button class="btn btn-default ml-4" (click)="addCourse()">Add</button>
+            </div>
+          </tab>
+        </tabset>
+      </div>
+    </div>
+  </div>
+</div>

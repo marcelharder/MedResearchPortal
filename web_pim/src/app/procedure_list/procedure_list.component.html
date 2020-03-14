@@ -1,0 +1,45 @@
+<div class="container">
+
+  <div class="row">
+   <div class="col-sm-6"><label value="">List of procedures</label></div>
+   <div class="col-sm-6"></div>
+  </div>
+  
+  <div class="row">
+   <div class="col-sm-12">
+  <table class="table">
+  
+                      <tr>
+  
+                          <th>ID</th>
+  
+                          <th>Procedure</th>
+  
+                          <th>Date</th> 
+  
+                          <th></th>
+  
+                      </tr>
+  
+                      <tr *ngFor="let procedure of procedures; let i = index">
+  
+                          <td>{{procedure.ID}}</td>
+  
+                          <td>{{procedure.Procedure}}</td>
+  
+                          <td>{{procedure.Date}}</td>
+  
+                          <td>{{procedure.ID}}</td>
+  
+                      </tr>
+  
+                  </table>
+  
+  
+  
+   </div>
+  </div>
+  
+  
+  
+  </div>

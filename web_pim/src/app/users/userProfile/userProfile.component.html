@@ -1,0 +1,100 @@
+<div class="container">
+  <div class="row">
+      <div class="col-sm-4"><h1>Your Profile</h1></div>
+      <div class="col-sm-8">
+        <div *ngIf="editForm.dirty" class="alert alert-info">
+          <strong>
+            Information: 
+          </strong>You have made changes. Any unsaved changes will be lost ...
+        </div>
+      </div>
+      
+    </div>
+<div class="row">
+  <div class="col-sm-4">
+    
+    <div class="card">
+      <img
+        class="card-img-top img-thumbnail"
+        src="{{ user.photoUrl }}"
+        alt="{{ user.knownAs }}"
+      />
+      <div class="card-body">
+        <div>
+          <strong>Locations: </strong>
+          <p>{{ user.city }}, {{ user.country }}</p>
+        </div>
+        <div>
+          <strong>Last active: </strong>
+          <p>{{ user.lastActive | date }}</p>
+        </div>
+        <div class="card-footer">
+            <div class="btn-group d-flex mt-3">
+                <button class="btn btn-danger w-50 mr-5"(click)='deleteProfile()'>Delete profile</button>
+                <button class="btn btn-success w-50" [disabled]="!editForm.dirty" form="editForm">Save changes</button>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-8">
+    <div class="tab-panel">
+      <tabset class="member-tabset">
+        <tab heading="Edit profile">
+          <form #editForm="ngForm" (ngSubmit)="updateUser()" id="editForm">
+            <h4>Phone</h4>
+            <input
+            class="form-control"
+            type="text"
+            name="phone"
+            [(ngModel)]="user.phone"
+          />
+            <h4>Email:</h4>
+            <input
+            class="form-control"
+            type="text"
+            name="email"
+            [(ngModel)]="user.email"
+          />
+            <h4>Location details</h4>
+            <div class="form-inline">
+              <label for="city">City</label>
+              <input
+                class="form-control ml-2 mr-2"
+                type="text"
+                name="city"
+                [(ngModel)]="user.city"
+              />
+              <label for="country">Country</label>
+              <input
+                class="form-control ml-2"
+                type="text"
+                name="country"
+                [(ngModel)]="user.country"
+              />
+            </div>
+          </form>
+        </tab>
+        <tab heading="Upload your picture">
+            <app-photo-editor (getMemberPhotoChange)="updatePhoto($event)"></app-photo-editor>
+          </tab
+        >
+        <tab heading="Privacy policy">
+          <h4>Our privacy policy</h4>
+          <div class="row">
+            <div class="col-sm-12">
+              <label>We collect your data on our website just to be able to communicate with you.</label><br/>
+              <label>We don't share any data.</label><br/>
+              <label>We don't send promotional email, because we don't like this.</label><br/>
+              <label>You can remove your profile at any time by clicking on the 'Delete Profile' button.</label><br/>
+              <label>This webapplication does not use cookies, because we don't have to with JWT authentication.</label><br/>
+             
+            </div>
+          </div>
+        </tab
+        >
+      </tabset>
+    </div>
+  </div>
+</div>
+</div>

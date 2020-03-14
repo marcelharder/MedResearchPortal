@@ -1,0 +1,153 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h1>{{ coach.username }}</h1>
+    </div>
+    <div class="col-sm-8"></div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top img-thumbnail" src="{{ coach.photoUrl }}" alt="{{ coach.knownAs }}" />
+          <div class="card-body">
+            <div>
+              <h4>Phone</h4>
+              <label class="lbl lbl-default">{{ coach.phone }}</label>
+            </div>
+            <div>
+              <h4>Email:</h4>
+              <label class="lbl lbl-default">{{ coach.email }}</label>
+            </div>
+            <div>
+              <strong>Location: </strong>
+              <p>{{ coach.city }}, {{ coach.country }}</p>
+            </div>
+
+            <div class="card-footer">
+              <div class="btn-group mt-3" role="group">
+                <button class="btn btn-secondary" (click)="displayEmail()">
+                  Email
+                </button>
+                <button class="btn btn-secondary" (click)="displaySMS()">
+                  SMS
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="tab-panel">
+          <tabset class="member-tabset">
+            <tab heading="Introducing">
+              <h4>Something {{ coach.username }} wants to share.</h4>
+              <div class="row">
+                <div class="col-sm-12">
+                  <label>We collect your data on our website just to be able to
+                    communicate with you.</label><br />
+                  <label>We don't share any data.</label><br />
+                  <label>We don't send promotional email, because we don't like
+                    this.</label><br />
+                  <label>You can remove your profile at any time by clicking on the
+                    'Delete Profile' button.</label><br />
+                  <label>This webapplication does not use cookies, because we don't
+                    have to with JWT authentication.</label><br />
+                </div>
+              </div>
+            </tab>
+
+            <tab heading="Mission and Vision">
+              <div class="row">
+                <div class="col-sm-12">
+                  <label>My Vision is to give world class coaching services of unbelievable quality, to all eligible</label><br />
+                  <label>world citizens and stay within the monetary constraints that I have to respect.</label><br />
+                  <label>My Mission is to be tireless in the continuous strive to reach this glorious goal</label><br />
+                  <label>and work hard with holostic and renewable principles to reach my goal in the minimum possible time</label><br />
+                  <label>to achieve maximum impact and respectfully paying tribute to the environment and Mother Earth.</label><br />
+                </div>
+              </div>
+            </tab>
+
+            <tab heading="Curriculum Vitae">
+              <div class="row">
+                <div class="col-sm-12">
+                  <label>We collect your data on our website just to be able to
+                    communicate with you.</label><br />
+                  <label>We don't share any data.</label><br />
+                  <label>We don't send promotional email, because we don't like
+                    this.</label><br />
+                  <label>You can remove your profile at any time by clicking on the
+                    'Delete Profile' button.</label><br />
+                  <label>This webapplication does not use cookies, because we don't
+                    have to with JWT authentication.</label><br />
+                </div>
+              </div>
+            </tab>
+          </tabset>
+        </div>
+
+        <div class="card mt-4">
+          <div class="card-body" *ngIf="showEmail()">
+            <div class="row">
+              <h4>Send Email</h4>
+            </div>
+            <div class="row">
+              <div class="col-sm-11">
+                <div class="row mt-3">
+                  <div class="col-sm-3">
+                    <label class="lbl lbl-default">Subject:</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <input type="text" [(ngModel)]="email.Subject" class="form-control" />
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-sm-3">
+                    <label class="lbl lbl-default">Body:</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <textarea name="EmailBody" rows="4" class="form-control" [(ngModel)]="email.Body"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1"></div>
+            </div>
+            <div class="btn-group mt-3" role="group">
+              <button class="btn btn-secondary" (click)="cancel()">
+                Cancel
+              </button>
+              <button class="btn btn-secondary" (click)="sendEmail()">
+                Send
+              </button>
+            </div>
+          </div>
+          <div class="card-body" *ngIf="showSMS()">
+            <div>
+              <h4>Send SMS</h4>
+            </div>
+            <div class="row">
+              <div class="col-sm-9">
+                <div class="row mt-3">
+                  <div class="col-sm-3">
+                    <label class="lbl lbl-default">Body:</label>
+                  </div>
+                  <div class="col-sm-9">
+                    <textarea name="SMSBody" rows="6" class="form-control" [(ngModel)]="sms.Body"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1"></div>
+            </div>
+            <div class="btn-group mt-3" role="group">
+              <button class="btn btn-secondary" (click)="cancel()">
+                Cancel
+              </button>
+              <button class="btn btn-secondary" (click)="sendSMS()">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
