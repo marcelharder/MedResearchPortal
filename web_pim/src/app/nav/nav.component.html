@@ -1,48 +1,34 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  
+
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" [routerLink]="['/home']">CoActive Coaching</a>
+  <a class="navbar-brand" [routerLink]="['/home']">Surgical Outcomes Application</a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item"  routerLinkActive="active"> <a class="nav-link" [routerLink]="['/intro']">Coaches</a>    </li>
+      <li class="nav-item"  routerLinkActive="active"> <a class="nav-link" [routerLink]="['/procedures']">Procedures</a>    </li>
+      <li class="nav-item"  routerLinkActive="active"> <a class="nav-link" [routerLink]="['/statistics']">Statistics</a>    </li>
       <li class="nav-item" >
         <div class="nav-link dropdown" dropdown>
-          <a class="dropdown-toggle" dropdownToggle>
-            Courses
-          </a>
+          <a class="dropdown-toggle" dropdownToggle> Settings </a>
           <div class="dropdown-menu mt-3" *dropdownMenu>
             <a class="dropdown-item" [routerLink]="['/course_1']"><i class="fa fa-course"></i>Course 1</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" [routerLink]="['/course_2']"><i class="fa fa-course"></i>Course 2</a>
           </div>
         </div>
-      
+
       </li>
-      <li class="nav-item" >
-        <div class="nav-link dropdown" dropdown>
-          <a class="dropdown-toggle" dropdownToggle>
-            Gallery
-          </a>
-          <div class="dropdown-menu mt-3" *dropdownMenu>
-            <a class="dropdown-item" [routerLink]="['/about']"><i class="fa fa-course"></i>About</a>
-          </div>
-        </div>
-      
-      </li>
-     
+
       <li class="nav-item" *ngIf="adminLogged"  routerLinkActive="active"> <a class="nav-link " [routerLink]="['/users']">Users</a>   </li>
       <li class="nav-item" *ngIf="adminLogged"  routerLinkActive="active"> <a class="nav-link " [routerLink]="['/bookings']">Bookings</a>   </li>
       <li class="nav-item" *ngIf="adminLogged"  routerLinkActive="active"> <a class="nav-link " [routerLink]="['/payments']">Payments</a>   </li>
-     
+      <li class="nav-item"  routerLinkActive="active"> <a class="nav-link " [routerLink]="['/about']">About</a>   </li>
+
     </ul>
 
-    <div *ngIf="loggedIn()" class="dropdown" dropdown>
-      <a class="dropdown-toggle" dropdownToggle>
-        Welcome {{auth.decodedToken.unique_name | titlecase}}
-      </a>
+    <div *ngIf="loggedIn()" class="dropdown" dropdown><a class="dropdown-toggle" dropdownToggle>Welcome {{auth.decodedToken.unique_name | titlecase}}</a>
       <div class="dropdown-menu mt-3" *dropdownMenu>
         <a class="dropdown-item" href="#" [routerLink]="['/profile']"><i class="fa fa-user"></i>Edit profile</a>
         <div class="dropdown-divider"></div>

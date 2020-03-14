@@ -14,6 +14,7 @@ import { UserListResolver } from './_resolvers/user-list.resolver';
 import { UserProfileComponent } from './users/userProfile/userProfile.component';
 import { ProfileResolver } from './_resolvers/profile.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -21,7 +22,8 @@ import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
-   { path: 'coach/:id', component: MemberDetailsComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'coach/:id', component: MemberDetailsComponent },
 
   {
 path: '',
