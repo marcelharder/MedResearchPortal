@@ -1,3 +1,24 @@
-<div class="container">
-  Here is the about page
+<div class="card">
+  <div class="card-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" (click)="clickUsers()">Users</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" (click)="clickBookings()">Bookings</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" (click)="clickPayments()">Payments</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="card-body">
+    <section>
+      My named outlet is here:
+      <router-outlet name="rot"></router-outlet>
+    </section>
+  </div>
+  <div class="card-footer"></div>
 </div>

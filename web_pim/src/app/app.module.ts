@@ -36,6 +36,9 @@ import { UserListResolver } from './_resolvers/user-list.resolver';
 import { ProfileResolver } from './_resolvers/profile.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-changes.guard';
 import { PhotoEditorComponent } from './users/PhotoEditor/PhotoEditor.component';
+import { DetailsOneComponent } from './test/details-one/details-one.component';
+import { DetailsTwoComponent } from './test/details-two/details-two.component';
+import { DetailsThreeComponent } from './test/details-three/details-three.component';
 
 
 
@@ -61,7 +64,10 @@ export function tokenGetter() {return localStorage.getItem('token');}
       UserCardComponent,
       EditUserDetailsComponent,
       UserProfileComponent,
-      PhotoEditorComponent
+      PhotoEditorComponent,
+      DetailsOneComponent,
+      DetailsTwoComponent,
+      DetailsThreeComponent
       
      
    ],

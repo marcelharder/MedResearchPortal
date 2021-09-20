@@ -124,3 +124,17 @@ E:\Code\WalkingSkeleton\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.Assembl
 E:\Code\WalkingSkeleton\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.RazorTargetAssemblyInfo.cache
 E:\Code\WalkingSkeleton\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.dll
 E:\Code\WalkingSkeleton\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.pdb
+E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp2.1\tracpersonal_api.deps.json
+E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp2.1\tracpersonal_api.runtimeconfig.json
+E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp2.1\tracpersonal_api.runtimeconfig.dev.json
+E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp2.1\tracpersonal_api.dll
+E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp2.1\tracpersonal_api.pdb
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.csprojAssemblyReference.cache
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.csproj.CoreCompileInputs.cache
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.RazorAssemblyInfo.cache
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.RazorAssemblyInfo.cs
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.AssemblyInfoInputs.cache
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.AssemblyInfo.cs
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.RazorTargetAssemblyInfo.cache
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.dll
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp2.1\tracpersonal_api.pdb

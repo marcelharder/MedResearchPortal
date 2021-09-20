@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {  }
+
+
+   clickUsers(){this.router.navigate(['/about',{ outlets: { rot: ['one']  }}]);}
+
+  // clickUsers(){this.router.navigate([{ outlets: { rot: [ '/main/one' ] }}]);}
+  //clickUsers(){  this.router.navigate([{ outlets: {rot: '/one'}}]);}
+
+
+   // clickUsers(){this.router.navigate([{ outlets: { about: [ '/main/one' ] }}]);}
+
+  clickBookings(){this.router.navigate(['/about',{ outlets: { rot: ['two']  }}]);}
+
+  clickPayments(){this.router.navigate(['/about',{ outlets: { rot: ['three']  }}]);}
+
+
+
 
 }

@@ -3,12 +3,12 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" [routerLink]="['/home']">Surgical Outcomes Application</a>
+  <a class="navbar-brand" [routerLink]="['/home']">MedResearchPortal</a>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item"  routerLinkActive="active"> <a class="nav-link" [routerLink]="['/procedures']">Procedures</a>    </li>
-      <li class="nav-item"  routerLinkActive="active"> <a class="nav-link" [routerLink]="['/statistics']">Statistics</a>    </li>
+      <li class="nav-item"  routerLinkActive="active"> <a class="nav-link" [routerLink]="['/procedures']">Studies</a>    </li>
+      <!-- <li class="nav-item"  routerLinkActive="active"> <a class="nav-link" [routerLink]="['/statistics']"></a>    </li>-->
       <li class="nav-item" >
         <div class="nav-link dropdown" dropdown>
           <a class="dropdown-toggle" dropdownToggle> Settings </a>
@@ -30,7 +30,7 @@
 
     <div *ngIf="loggedIn()" class="dropdown" dropdown><a class="dropdown-toggle" dropdownToggle>Welcome {{auth.decodedToken.unique_name | titlecase}}</a>
       <div class="dropdown-menu mt-3" *dropdownMenu>
-        <a class="dropdown-item" href="#" [routerLink]="['/profile']"><i class="fa fa-user"></i>Edit profile</a>
+        <a class="dropdown-item" href="#" [routerLink]="['/main/profile']"><i class="fa fa-user"></i>Edit profile</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="#" (click)="logOut()"><i class="fa- fa-sign-out"></i>Log out</a>
       </div>
