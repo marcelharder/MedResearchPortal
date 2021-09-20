@@ -16,6 +16,7 @@ namespace web_api.dtos
         public string email { get; set; }
         public string phone { get; set; }
         public string city { get; set; }
+        public string interests { get; set; }
         public string country { get; set; }
         public string photoUrl { get; set; }
      

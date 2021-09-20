@@ -14,6 +14,7 @@ using Microsoft.Extensions.Options;
 using CloudinaryDotNet;
 using web_api._helpers;
 using CloudinaryDotNet.Actions;
+using AutoMapper;
 
 namespace web_api.Controllers
 {
@@ -22,13 +23,15 @@ namespace web_api.Controllers
     public class UsersController : ControllerBase
     {
         private IUserRepository _rep;
+        private IMapper _mapper;
         private readonly IOptions<CloudinarySettings> _cloudinaryConfig;
         private Cloudinary _cloudinary;
 
-        public UsersController(IUserRepository rep, IOptions<CloudinarySettings> cloudinaryConfig)
+        public UsersController(IUserRepository rep, IOptions<CloudinarySettings> cloudinaryConfig, IMapper mapper)
         {
             _rep = rep;
             _cloudinaryConfig = cloudinaryConfig;
+            _mapper = mapper;
 
 
             Account acc = new Account(
@@ -40,12 +43,11 @@ namespace web_api.Controllers
 
         }
 
-        public async Task<IActionResult> Get([FromQuery]UserParams userParams)
+        public async Task<IActionResult> Get([FromQuery] UserParams userParams)
         {
-            var mapper = new ServiceMapper();
             var values = await _rep.GetUsers(userParams);
             var l = new List<UserForReturnDto>();
-            foreach (User us in values) { l.Add(mapper.mapToReturnDto(us)); }
+            foreach (User us in values) { l.Add(_mapper.Map<UserForReturnDto>(us)); }
 
             Response.AddPagination(values.Currentpage, values.PageSize, values.TotalCount, values.TotalPages);
             return Ok(l);
@@ -55,9 +57,15 @@ namespace web_api.Controllers
         [HttpGet("{id}", Name = "GetUser")]
         public async Task<ActionResult> GetUser(int id)
         {
-            var mapper = new ServiceMapper();
+           
             var user = await _rep.GetUser(id);
-            return Ok(mapper.mapToReturnDto(user));
+            return Ok(_mapper.Map<UserForReturnDto>(user));
+        }
+
+        [HttpGet("NameOfResearch/{userId}")]
+        public async Task<IActionResult> findResearchName(int userId){
+            var result = "testName";
+          return Ok(result);
         }
 
         // GET api/put/5
@@ -72,13 +80,13 @@ namespace web_api.Controllers
             throw new Exception($"Updating user {id} failed on save");
 
         }
-   [HttpDelete("{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
             if (id != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value)) return Unauthorized();
-             var user = await _rep.GetUser(id);
-             _rep.Delete(user);
-             if (await _rep.SaveAll()) return Ok("User deleted ...");
+            var user = await _rep.GetUser(id);
+            _rep.Delete(user);
+            if (await _rep.SaveAll()) return Ok("User deleted ...");
             return BadRequest("Deleting failed ...");
 
         }

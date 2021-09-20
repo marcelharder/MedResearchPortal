@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { JwtHelperService} from '@auth0/angular-jwt';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,12 @@ export class AuthService {
   decodedToken: any;
 
   constructor(private http: HttpClient) {}
+
+  public content = new BehaviorSubject<string>('0');
+  public title = this.content.asObservable();
+
+  changeTitle(sh: string) { this.content.next(sh); }
+
 
   login(model: any) {
     return this.http.post(this.baseUrl + 'auth/login', model).pipe(

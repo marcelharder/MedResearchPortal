@@ -12,18 +12,11 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {  }
 
-
    clickUsers(){this.router.navigate(['/about',{ outlets: { rot: ['one']  }}]);}
 
-  // clickUsers(){this.router.navigate([{ outlets: { rot: [ '/main/one' ] }}]);}
-  //clickUsers(){  this.router.navigate([{ outlets: {rot: '/one'}}]);}
+   clickBookings(){this.router.navigate(['/about',{ outlets: { rot: ['two']  }}]);}
 
-
-   // clickUsers(){this.router.navigate([{ outlets: { about: [ '/main/one' ] }}]);}
-
-  clickBookings(){this.router.navigate(['/about',{ outlets: { rot: ['two']  }}]);}
-
-  clickPayments(){this.router.navigate(['/about',{ outlets: { rot: ['three']  }}]);}
+   clickPayments(){this.router.navigate(['/about',{ outlets: { rot: ['three']  }}]);}
 
 
 

@@ -2,6 +2,7 @@ import { AuthService } from '../_services/auth.service';
 import { Component, OnInit } from '@angular/core';
 import { AlertifyService } from '../_services/alertify.service';
 import { Router } from '@angular/router';
+import { userService } from '../_services/user.service';
 
 @Component({
   selector: 'app-nav',
@@ -10,11 +11,13 @@ import { Router } from '@angular/router';
 })
 export class NavComponent implements OnInit {
   model: any = {};
+  title = "MedResearchPortal";
   login_failed = false;
   adminLogged: boolean;
   normalLogged: boolean;
   specialLogged: boolean;
   constructor(public auth: AuthService,
+    private us: userService,
     private alertify: AlertifyService,
     private router: Router) { }
 
@@ -28,11 +31,18 @@ export class NavComponent implements OnInit {
         this.adminLogged = false;
         this.normalLogged = false;
         this.specialLogged = false;
+
         switch (this.auth.decodedToken.role) {
+
         case 'admin':
         this.adminLogged = true;
         break;
         case 'normal':
+         // get the interests of the current user
+         this.us.getUser(this.auth.decodedToken.nameid).subscribe((next)=>{
+          debugger;
+           this.title = next.interests;
+         }, (error)=>{this.alertify.error(error)})
         this.normalLogged = true;
         break;
         case 'special':

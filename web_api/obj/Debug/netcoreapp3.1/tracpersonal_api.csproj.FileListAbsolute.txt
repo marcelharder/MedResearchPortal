@@ -1,0 +1,5 @@
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp3.1\tracpersonal_api.csprojAssemblyReference.cache
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp3.1\tracpersonal_api.AssemblyInfoInputs.cache
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp3.1\tracpersonal_api.AssemblyInfo.cs
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp3.1\tracpersonal_api.csproj.CoreCompileInputs.cache
+E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp3.1\tracpersonal_api.MvcApplicationPartsAssemblyInfo.cache
