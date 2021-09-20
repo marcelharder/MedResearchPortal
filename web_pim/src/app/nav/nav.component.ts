@@ -39,19 +39,14 @@ export class NavComponent implements OnInit {
         break;
         case 'normal':
          // get the interests of the current user
-         this.us.getUser(this.auth.decodedToken.nameid).subscribe((next)=>{
-          debugger;
-           this.title = next.interests;
-         }, (error)=>{this.alertify.error(error)})
+        this.us.getUser(this.auth.decodedToken.nameid).subscribe((next)=>{ this.title = next.interests; }, (error)=>{this.alertify.error(error)});
+         // send it to the behaviorsubject
+        this.auth.changeTitle(this.title);
         this.normalLogged = true;
         break;
         case 'special':
         this.specialLogged = true;
         break;}
-
-
-
-
 
 
         // go to the list of procedures
@@ -69,6 +64,7 @@ export class NavComponent implements OnInit {
   loggedIn() { return this.auth.loggedIn(); }
 
   logOut() {
+    this.title = "MedResearchPortal";
     this.alertify.message('Logged out');
     localStorage.removeItem('token');
   }

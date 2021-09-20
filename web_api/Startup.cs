@@ -34,10 +34,11 @@ namespace web_api
         {
 
             services.AddDbContext<dataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddControllers().AddNewtonsoftJson(options =>
-    {
-        options.SerializerSettings.ContractResolver = new DefaultContractResolver();
-    });
+            {
+                  options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+            });
 
             //services.BuildServiceProvider().GetService<dataContext>().Database.Migrate();
             services.AddCors();
@@ -54,10 +55,10 @@ namespace web_api
                options.TokenValidationParameters = new TokenValidationParameters
                {
                    ValidateIssuerSigningKey = true,
-                   IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII
-                   .GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
+                   IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
                    ValidateIssuer = false,
                    ValidateAudience = false
+                   
                };
            });
 

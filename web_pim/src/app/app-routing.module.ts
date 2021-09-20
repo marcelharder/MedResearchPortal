@@ -18,6 +18,7 @@ import { AboutComponent } from './about/about.component';
 import { DetailsOneComponent } from './test/details-one/details-one.component';
 import { DetailsThreeComponent } from './test/details-three/details-three.component';
 import { DetailsTwoComponent } from './test/details-two/details-two.component';
+import { ProcedureListComponent } from './procedure_list/procedure_list.component';
 
 
 
@@ -26,7 +27,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'about', component: AboutComponent, children: [
-    { path: 'one', component: DetailsOneComponent, outlet: "rot" },{ path: 'two', component: DetailsTwoComponent, outlet: "rot"},{ path: 'three', component: DetailsThreeComponent, outlet: "rot"}] },
+   { path: 'one', component: DetailsOneComponent, outlet: "rot" },{ path: 'two', component: DetailsTwoComponent, outlet: "rot"},{ path: 'three', component: DetailsThreeComponent, outlet: "rot"}] },
   { path: 'coach/:id', component: MemberDetailsComponent },
 
   {
@@ -35,6 +36,7 @@ runGuardsAndResolvers: 'always',
 canActivate: [AuthGuard],
 children: [
   { path: 'main/one', component: DetailsOneComponent},
+  { path: 'procedureList', component: ProcedureListComponent},
 
   // { path: 'user/:id', component: EditUserDetailsComponent, resolve: {user: UserDetailsResolver} },
   { path: 'profile', component: UserProfileComponent, resolve: {user: ProfileResolver}, canDeactivate: [PreventUnsavedChanges]},
