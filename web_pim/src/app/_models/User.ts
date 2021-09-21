@@ -1,4 +1,4 @@
-import { Course } from './course';
+
 import { Invoice } from './Invoice';
 
 
@@ -20,6 +20,5 @@ export interface User {
     interests?: string;
     introduction?: string;
     lookingFor?: string;
-    courses?: Course[];
     invoices?: Invoice[];
 }

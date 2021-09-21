@@ -20,11 +20,6 @@ import { RegisterComponent } from './register/register.component';
 
 import { AlertifyService } from './_services/alertify.service';
 
-import { CoachService } from './_services/coach.service';
-import { MemberListComponent } from './members/memberList/member-list.component';
-import { MemberCardComponent } from './members/memberCard/member-card.component';
-import { MemberDetailsComponent } from './members/member-details/member-details.component';
-
 
 import { UserProfileComponent } from './users/userProfile/userProfile.component';
 import { AuthGuard } from './_guards/auth.guard';
@@ -54,10 +49,6 @@ export function tokenGetter() {return localStorage.getItem('token');}
       NavComponent,
       HomeComponent,
       RegisterComponent,
-    
-      MemberListComponent,
-      MemberCardComponent,
-      MemberDetailsComponent,
       UserProfileComponent,
      
       UserListComponent,
@@ -94,7 +85,6 @@ export function tokenGetter() {return localStorage.getItem('token');}
       AuthService,
       ErrorInterceptorProvider,
       AlertifyService,
-      CoachService,
       AuthGuard,
       UserDetailsResolver,
       UserListResolver,

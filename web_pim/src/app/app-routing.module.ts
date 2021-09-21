@@ -3,9 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
-
-import { MemberDetailsComponent } from './members/member-details/member-details.component';
-
 import { AuthGuard } from './_guards/auth.guard';
 import { UserListComponent } from './users/user-list/user-list.component';
 import { EditUserDetailsComponent } from './users/edit_user_details/edit_user_details.component';
@@ -27,8 +24,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'about', component: AboutComponent, children: [
-   { path: 'one', component: DetailsOneComponent, outlet: "rot" },{ path: 'two', component: DetailsTwoComponent, outlet: "rot"},{ path: 'three', component: DetailsThreeComponent, outlet: "rot"}] },
-  { path: 'coach/:id', component: MemberDetailsComponent },
+  { path: 'one', component: DetailsOneComponent, outlet: "rot" },{ path: 'two', component: DetailsTwoComponent, outlet: "rot"},{ path: 'three', component: DetailsThreeComponent, outlet: "rot"}] },
+ 
 
   {
 path: '',

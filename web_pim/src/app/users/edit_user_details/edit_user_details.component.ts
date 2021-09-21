@@ -36,11 +36,8 @@ export class EditUserDetailsComponent implements OnInit {
     this.route.data.subscribe(data => {
       this.user = data['user'];
     });
-    this.enrolled_courses = this.user.courses;
-    this.invoices = this.user.invoices;
-
-    debugger;
-
+   
+    
     this.course_1 = {
       level: 12,
       description: 'Non duality, introduction and nothingness',
@@ -61,24 +58,13 @@ export class EditUserDetailsComponent implements OnInit {
     };
     this.all_courses = [this.course_1, this.course_2];
 
-    if (!this.user.courses === undefined) {
-      this.enrolled_courses = this.user.courses;
-      if (
-        Object.keys(this.enrolled_courses).length <
-        Object.keys(this.all_courses).length
-      ) {
-        for (let n = 0; n < Object.keys(this.enrolled_courses).length; n++) {
-          this.selectable_courses = this.all_courses;
-          this.selectable_courses.filter(e => e.description !== this.enrolled_courses[n].description);
-        }
-      }
-    } else { this.selectable_courses = this.all_courses; }
+    
   }
 
   addCourse() {
     // attach the current user to the course that has just been selected
 
-    debugger;
+    
 
 
     this.courseService.addCourse(this.user.id, this.selected_course).subscribe(

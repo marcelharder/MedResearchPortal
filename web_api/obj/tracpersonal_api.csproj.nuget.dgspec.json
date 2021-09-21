@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Code\\MedResearchPortal\\web_api\\tracpersonal_api.csproj": {}
+    "/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/tracpersonal_api.csproj": {}
   },
   "projects": {
-    "E:\\Code\\MedResearchPortal\\web_api\\tracpersonal_api.csproj": {
+    "/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/tracpersonal_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\MedResearchPortal\\web_api\\tracpersonal_api.csproj",
+        "projectUniqueName": "/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/tracpersonal_api.csproj",
         "projectName": "tracpersonal_api",
-        "projectPath": "E:\\Code\\MedResearchPortal\\web_api\\tracpersonal_api.csproj",
-        "packagesPath": "C:\\Users\\m_har\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\MedResearchPortal\\web_api\\obj\\",
+        "projectPath": "/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/tracpersonal_api.csproj",
+        "packagesPath": "/home/marcel/.nuget/packages/",
+        "outputPath": "/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\m_har\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/marcel/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp5.0"
@@ -84,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.104\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/marcel/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }

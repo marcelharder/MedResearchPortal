@@ -1,61 +1,122 @@
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\tracpersonal_api.csprojAssemblyReference.cache
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\tracpersonal_api.GeneratedMSBuildEditorConfig.editorconfig
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\tracpersonal_api.AssemblyInfoInputs.cache
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\tracpersonal_api.AssemblyInfo.cs
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\tracpersonal_api.csproj.CoreCompileInputs.cache
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\tracpersonal_api.MvcApplicationPartsAssemblyInfo.cache
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\appsettings.Development.json
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\appsettings.json
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\package-lock.json
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\tracpersonal_api.exe
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\tracpersonal_api.deps.json
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\tracpersonal_api.runtimeconfig.json
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\tracpersonal_api.runtimeconfig.dev.json
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\tracpersonal_api.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\ref\tracpersonal_api.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\tracpersonal_api.pdb
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\AutoMapper.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\CloudinaryDotNet.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.AspNetCore.JsonPatch.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.Data.Sqlite.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.EntityFrameworkCore.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.EntityFrameworkCore.Relational.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.EntityFrameworkCore.Sqlite.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.IdentityModel.JsonWebTokens.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.IdentityModel.Logging.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.IdentityModel.Protocols.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Microsoft.IdentityModel.Tokens.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Newtonsoft.Json.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Newtonsoft.Json.Bson.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\Remotion.Linq.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\SQLitePCLRaw.batteries_green.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\SQLitePCLRaw.batteries_v2.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\SQLitePCLRaw.core.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\SQLitePCLRaw.provider.e_sqlite3.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\System.IdentityModel.Tokens.Jwt.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\System.Interactive.Async.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\runtimes\alpine-x64\native\libe_sqlite3.so
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\runtimes\linux-arm\native\libe_sqlite3.so
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\runtimes\linux-arm64\native\libe_sqlite3.so
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\runtimes\linux-armel\native\libe_sqlite3.so
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\runtimes\linux-x64\native\libe_sqlite3.so
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\runtimes\linux-x86\native\libe_sqlite3.so
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\runtimes\osx-x64\native\libe_sqlite3.dylib
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\runtimes\win-x64\native\e_sqlite3.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\runtimes\win-x86\native\e_sqlite3.dll
-E:\Code\MedResearchPortal\web_api\bin\Debug\netcoreapp5.0\runtimes\win8-arm\native\e_sqlite3.dll
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\staticwebassets\tracpersonal_api.StaticWebAssets.Manifest.cache
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\staticwebassets\tracpersonal_api.StaticWebAssets.xml
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\scopedcss\bundle\tracpersonal_api.styles.css
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\tracpersonal_api.RazorTargetAssemblyInfo.cache
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\tracpersonal_api.csproj.CopyComplete
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\tracpersonal_api.dll
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\ref\tracpersonal_api.dll
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\tracpersonal_api.pdb
-E:\Code\MedResearchPortal\web_api\obj\Debug\netcoreapp5.0\tracpersonal_api.genruntimeconfig.cache
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.csprojAssemblyReference.cache
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.GeneratedMSBuildEditorConfig.editorconfig
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.AssemblyInfoInputs.cache
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.AssemblyInfo.cs
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.csproj.CoreCompileInputs.cache
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.MvcApplicationPartsAssemblyInfo.cache
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/appsettings.Development.json
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/appsettings.json
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/package-lock.json
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api.exe
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api.deps.json
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api.runtimeconfig.json
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api.runtimeconfig.dev.json
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/ref/tracpersonal_api.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api.pdb
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/AutoMapper.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/CloudinaryDotNet.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.AspNetCore.JsonPatch.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.Data.Sqlite.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.EntityFrameworkCore.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.EntityFrameworkCore.Relational.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.IdentityModel.Logging.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.IdentityModel.Protocols.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.IdentityModel.Tokens.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Newtonsoft.Json.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Newtonsoft.Json.Bson.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Remotion.Linq.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/SQLitePCLRaw.batteries_green.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/SQLitePCLRaw.batteries_v2.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/SQLitePCLRaw.core.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/SQLitePCLRaw.provider.e_sqlite3.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/System.IdentityModel.Tokens.Jwt.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/System.Interactive.Async.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/alpine-x64/native/libe_sqlite3.so
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-arm/native/libe_sqlite3.so
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-arm64/native/libe_sqlite3.so
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-armel/native/libe_sqlite3.so
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-x64/native/libe_sqlite3.so
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-x86/native/libe_sqlite3.so
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/win-x64/native/e_sqlite3.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/win-x86/native/e_sqlite3.dll
+E:/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/win8-arm/native/e_sqlite3.dll
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/staticwebassets/tracpersonal_api.StaticWebAssets.Manifest.cache
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/staticwebassets/tracpersonal_api.StaticWebAssets.xml
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/scopedcss/bundle/tracpersonal_api.styles.css
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.RazorTargetAssemblyInfo.cache
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.csproj.CopyComplete
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.dll
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/ref/tracpersonal_api.dll
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.pdb
+E:/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.genruntimeconfig.cache
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/appsettings.Development.json
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/appsettings.json
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/package-lock.json
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api.deps.json
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api.runtimeconfig.json
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api.runtimeconfig.dev.json
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/ref/tracpersonal_api.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/tracpersonal_api.pdb
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/AutoMapper.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/CloudinaryDotNet.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.AspNetCore.JsonPatch.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.Data.Sqlite.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.EntityFrameworkCore.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.EntityFrameworkCore.Relational.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.EntityFrameworkCore.Sqlite.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.IdentityModel.Logging.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.IdentityModel.Protocols.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Microsoft.IdentityModel.Tokens.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Newtonsoft.Json.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Newtonsoft.Json.Bson.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/Remotion.Linq.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/SQLitePCLRaw.batteries_green.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/SQLitePCLRaw.batteries_v2.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/SQLitePCLRaw.core.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/SQLitePCLRaw.provider.e_sqlite3.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/System.IdentityModel.Tokens.Jwt.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/System.Interactive.Async.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/alpine-x64/native/libe_sqlite3.so
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-arm/native/libe_sqlite3.so
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-arm64/native/libe_sqlite3.so
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-armel/native/libe_sqlite3.so
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-x64/native/libe_sqlite3.so
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/linux-x86/native/libe_sqlite3.so
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/osx-x64/native/libe_sqlite3.dylib
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/win-x64/native/e_sqlite3.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/win-x86/native/e_sqlite3.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/bin/Debug/netcoreapp5.0/runtimes/win8-arm/native/e_sqlite3.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.csproj.AssemblyReference.cache
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.GeneratedMSBuildEditorConfig.editorconfig
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.AssemblyInfoInputs.cache
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.AssemblyInfo.cs
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.csproj.CoreCompileInputs.cache
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.MvcApplicationPartsAssemblyInfo.cache
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/staticwebassets/tracpersonal_api.StaticWebAssets.Manifest.cache
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/staticwebassets/tracpersonal_api.StaticWebAssets.xml
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/scopedcss/bundle/tracpersonal_api.styles.css
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.RazorTargetAssemblyInfo.cache
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.csproj.CopyComplete
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/ref/tracpersonal_api.dll
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.pdb
+/media/marcel/WD Caviar/Code/MedResearchPortal/web_api/obj/Debug/netcoreapp5.0/tracpersonal_api.genruntimeconfig.cache
