@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace web_api.models
 {
@@ -27,6 +28,7 @@ namespace web_api.models
         public string Mobile { get; set; }
         public string DatabaseRole { get; set; }
         public string Country { get; set; }
+        public bool Active { get; set; }
 
         public User(){
           

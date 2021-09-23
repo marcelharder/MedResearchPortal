@@ -37,9 +37,10 @@ export class NavComponent implements OnInit {
         case 'admin':
         this.adminLogged = true;
         break;
-        case 'normal':
+        case 'participant':
          // get the interests of the current user
-        this.us.getUser(this.auth.decodedToken.nameid).subscribe((next)=>{ this.title = next.interests; }, (error)=>{this.alertify.error(error)});
+        this.us.getUser(this.auth.decodedToken.nameid).subscribe((next)=>{ 
+          this.title = next.interests; }, (error)=>{this.alertify.error(error)});
          // send it to the behaviorsubject
         this.auth.changeTitle(this.title);
         this.normalLogged = true;

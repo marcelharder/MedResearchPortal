@@ -3,6 +3,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -18,10 +19,14 @@ namespace web_api.Controllers
     {
         private readonly IAuthRepository _repo;
         private readonly IConfiguration _config;
-        public AuthController(IAuthRepository repo, IConfiguration config)
+        private readonly IUserRepository _user;
+         private IMapper _mapper;
+        public AuthController(IAuthRepository repo, IConfiguration config, IUserRepository user, IMapper mapper)
         {
             _config = config;
+            _mapper = mapper;
             _repo = repo;
+            _user = user;
         }
 
         [HttpPost("register")]
@@ -30,8 +35,16 @@ namespace web_api.Controllers
             ufr.username = ufr.username.ToLower();
             if (await _repo.UserExists(ufr.username)) { return BadRequest("User already exists ..."); }
             var UserToCreate = new User { Username = ufr.username };
+            
             var createdUser = await _repo.Register(UserToCreate, ufr.password);
-            return StatusCode(201);
+
+            _user.AddUser(createdUser);
+            
+            if(await _user.SaveAll()){
+                var reUser = _mapper.Map<UserForReturnDto>(createdUser);
+                return CreatedAtRoute("GetUser", new { id = reUser.Id }, reUser);
+            }
+            return BadRequest();
         }
 
         [HttpPost("login")]

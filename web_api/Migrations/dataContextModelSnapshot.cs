@@ -14,52 +14,77 @@ namespace tracpersonal_api.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.11-servicing-32099");
+                .HasAnnotation("Relational:MaxIdentifierLength", 64)
+                .HasAnnotation("ProductVersion", "5.0.7");
 
             modelBuilder.Entity("web_api.models.User", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.Property<string>("Address");
+                    b.Property<bool>("Active")
+                        .HasColumnType("tinyint(1)");
 
-                    b.Property<string>("City");
+                    b.Property<string>("Address")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("Country");
+                    b.Property<string>("City")
+                        .HasColumnType("longtext");
 
-                    b.Property<DateTime>("Created");
+                    b.Property<string>("Country")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("DatabaseRole");
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<DateTime>("DateOfBirth");
+                    b.Property<string>("DatabaseRole")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("Email");
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Gender");
+                    b.Property<string>("Email")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("IBAN");
+                    b.Property<string>("Gender")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("Interests");
+                    b.Property<string>("IBAN")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("Introduction");
+                    b.Property<string>("Interests")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("KnownAs");
+                    b.Property<string>("Introduction")
+                        .HasColumnType("longtext");
 
-                    b.Property<DateTime>("LastActive");
+                    b.Property<string>("KnownAs")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("LookingFor");
+                    b.Property<DateTime>("LastActive")
+                        .HasColumnType("datetime(6)");
 
-                    b.Property<string>("Mobile");
+                    b.Property<string>("LookingFor")
+                        .HasColumnType("longtext");
 
-                    b.Property<byte[]>("PasswordHash");
+                    b.Property<string>("Mobile")
+                        .HasColumnType("longtext");
 
-                    b.Property<byte[]>("PasswordSalt");
+                    b.Property<byte[]>("PasswordHash")
+                        .HasColumnType("longblob");
 
-                    b.Property<string>("PhotoUrl");
+                    b.Property<byte[]>("PasswordSalt")
+                        .HasColumnType("longblob");
 
-                    b.Property<string>("Role");
+                    b.Property<string>("PhotoUrl")
+                        .HasColumnType("longtext");
 
-                    b.Property<string>("Username");
+                    b.Property<string>("Role")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 
@@ -69,9 +94,11 @@ namespace tracpersonal_api.Migrations
             modelBuilder.Entity("web_api.models.Value", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 

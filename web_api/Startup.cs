@@ -17,6 +17,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Extensions.Hosting;
 using AutoMapper;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 namespace web_api
 {
@@ -33,11 +34,23 @@ namespace web_api
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<dataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<dataContext>(
+    options => options.UseMySql(
+        Configuration.GetConnectionString("SQLConnection"),
+        ServerVersion.AutoDetect(Configuration.GetConnectionString("SQLConnection"))
+    )
+);
 
+
+            /*  services.AddDbContext<dataContext>(options => options      
+                 .UseMySql(Configuration.GetConnectionString("SQLConnection"),      
+                     mysqlOptions =>      
+                         mysqlOptions.ServerVersion(new Pomelo.EntityFrameworkCore.MySql.Storage.ServerVersion(new Version(10, 4, 6), ServerType.MariaDb)).EnableRetryOnFailure()));
+
+  */
             services.AddControllers().AddNewtonsoftJson(options =>
             {
-                  options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+                options.SerializerSettings.ContractResolver = new DefaultContractResolver();
             });
 
             //services.BuildServiceProvider().GetService<dataContext>().Database.Migrate();
@@ -58,7 +71,7 @@ namespace web_api
                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
                    ValidateIssuer = false,
                    ValidateAudience = false
-                   
+
                };
            });
 
@@ -105,7 +118,7 @@ namespace web_api
             app.UseAuthentication();
             app.UseDefaultFiles();
             app.UseStaticFiles();
-           
+
             app.UseEndpoints(endpoints =>
            {
                endpoints.MapControllers();

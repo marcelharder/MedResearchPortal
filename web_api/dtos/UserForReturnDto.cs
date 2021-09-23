@@ -5,7 +5,7 @@ namespace web_api.dtos
 {
     public class UserForReturnDto
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public int age { get; set; }
         public string username { get; set; }
         public string role { get; set; }

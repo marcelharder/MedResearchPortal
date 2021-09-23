@@ -21,10 +21,10 @@ namespace web_api.data
             var result = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
             return result;
         }
-        
+
         public async Task<PagedList<User>> GetUsers(UserParams userParams)
         {
-           
+
             var users = _context.Users.OrderByDescending(u => u.Id).AsQueryable();
             return await PagedList<User>.CreateAsync(users, userParams.PageNumber, userParams.PageSize);
         }
@@ -34,8 +34,13 @@ namespace web_api.data
         }
         public void Delete<T>(T entity) where T : class
         {
-             _context.Remove(entity);
+            _context.Remove(entity);
         }
+       
 
+        public void AddUser(User n)
+        {
+             _context.Users.Add(n);
+        }
     }
 }

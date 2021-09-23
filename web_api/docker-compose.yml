@@ -1,0 +1,22 @@
+version: '3.3'
+services: 
+  db:
+    image: mariadb
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+     MYSQL_ROOT_PASSWORD: example
+    networks: 
+      - internal-container-network
+    volumes:
+      - mariadb-data:/var/lib/mysql
+  
+  
+  
+volumes:
+ mariadb-data:
+  
+networks:
+ internal-container-network:
+  driver: bridge

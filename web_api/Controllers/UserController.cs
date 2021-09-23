@@ -63,7 +63,7 @@ namespace web_api.Controllers
         }
 
         [HttpGet("NameOfResearch/{userId}")]
-        public async Task<IActionResult> findResearchName(int userId){
+        public IActionResult findResearchName(int userId){
             var result = "testName";
           return Ok(result);
         }

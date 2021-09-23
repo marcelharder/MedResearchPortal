@@ -35,17 +35,20 @@ namespace web_api.data
 
         public async Task<User> Register(User user, string password)
         {
-            DateTime now = DateTime.UtcNow;
-            byte[] passwordHash, passwordSalt;
-            CreatePassWordHash(password, out passwordHash, out passwordSalt);
-            user.PasswordHash = passwordHash;
-            user.PasswordSalt = passwordSalt;
-            user.Role = "normal";
-            user.PhotoUrl = "https://res.cloudinary.com/marcelcloud/image/upload/v1559818775/user.png.jpg";
-            user.Created = now;
 
-            await _context.Users.AddAsync(user);
-            await _context.SaveChangesAsync();
+            await Task.Run(() =>
+            {
+                DateTime now = DateTime.UtcNow;
+                byte[] passwordHash, passwordSalt;
+                CreatePassWordHash(password, out passwordHash, out passwordSalt);
+                user.PasswordHash = passwordHash;
+                user.PasswordSalt = passwordSalt;
+                user.Role = "normal";
+                user.PhotoUrl = "https://res.cloudinary.com/marcelcloud/image/upload/v1559818775/user.png.jpg";
+                user.Created = now;
+
+            });
+
             return user;
         }
 
@@ -60,7 +63,7 @@ namespace web_api.data
 
         public async Task<bool> UserExists(string username)
         {
-            if(await _context.Users.AnyAsync(x => x.Username == username)) return true;
+            if (await _context.Users.AnyAsync(x => x.Username == username)) return true;
             return false;
         }
     }

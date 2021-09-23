@@ -12,6 +12,7 @@ namespace web_api.data
       
         Task<PagedList<User>> GetUsers(UserParams userParams);
         Task<User> GetUser(int id);
+        void AddUser(User n);
         Task<bool> SaveAll();  
         void Delete<T>(T entity) where T: class;
 
